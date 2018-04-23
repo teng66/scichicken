@@ -47,32 +47,31 @@
         <br>
         <label class="label" v-on:dblclick="showNoItems"><font color="#D9B300">物品选项:</font></label>
         <input type="checkbox" id="showitemtop" v-model="showItemTop">
-        <label for="showitemtop"><font color="#D9B300">高级物资</font></label>
+        <label for="showitemtop"><font color="#D9B300">3级物品</font></label>
         <br>
         <input type="checkbox" id="showitemduo" v-model="showItemDuoDuo">
-        <label for="showitemduo"><font color="#D9B300">多多益善</font></label>
+        <label for="showitemduo"><font color="#D9B300">2级物品</font></label>
         <br>
         <input type="checkbox" id="showitembasic" v-model="showItemBasic">
-        <label for="showitembasic"><font color="#D9B300">基本物资</font></label>
+        <label for="showitembasic"><font color="#D9B300">1级物品</font></label>
         <br>
         <input type="checkbox" id="showitemar" v-model="showItemAR">
-        <label for="showitemar"><font color="#D9B300"步枪相关</font></label>
+        <label for="showitemar"><font color="#D9B300">自动步枪相关</font></label>
 		<br>
         <input type="checkbox" id="showitemsr" v-model="showItemSR">
-        <label for="showitemsr"><font color="#D9B300">狙击相关</font></label>
+        <label for="showitemsr"><font color="#D9B300">狙击步枪相关</font></label>
         <br>
         <input type="checkbox" id="showitemhealth" v-model="showItemHealth">
         <label for="showitemhealth"><font color="#D9B300">药品</font></label>
-        <br>
         <input type="checkbox" id="showitemthrow" v-model="showItemThrow">
         <label for="showitemthrow"><font color="#D9B300">投掷物</font></label>
-        <br>
         <input type="checkbox" id="showitemammo" v-model="showItemAmmo">
         <label for="showitemammo"><font color="#D9B300">子弹</font></label>
         <br>
         <input type="checkbox" id="showitemall" v-model="showItemAll">
         <label for="showitemall"><font color="#D9B300">所有</font></label>
         <hr>
+        <a class="button is-small" @click="setFPS(5)"><font>fps5</font></a>
         <a class="button is-small" @click="setFPS(15)"><font>fps15</font></a>
         <a class="button is-small" @click="setFPS(30)"><font>fps30</font></a>
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
