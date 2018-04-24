@@ -18,70 +18,77 @@
   <div id="app">
     <div class="sidenav">
       <section class="section">
-        <h1 align="left"><font color="#D9B300" size="5">云雷达</font></h1>
-        <p><font color="#D9B300"> </font></p>
+        <h1 align="left"><font color="#FFFFFF" size="5">云雷达</font></h1>
+        <p><font color="#FFFFFF"> </font></p>
         <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
         </div> -->
-        <label class="label" style="line-height:2.5"><font color="#D9B300"></font></label>
+        <label class="label" style="line-height:2.5"><font color="#FFFFFF"></font></label>
         <input type="radio" id="erangel" value="erangel" v-model="mapType">
-        <label for="erangel"><font color="#D9B300">小岛</font></label>
+        <label for="erangel"><font color="#FFFFFF">小岛</font></label>
         <input type="radio" id="miramar" value="miramar" v-model="mapType">
-        <label for="miramar"><font color="#D9B300">沙漠</font></label>
+        <label for="miramar"><font color="#FFFFFF">沙漠</font></label>
         <br>
         <br>
-        <label class="label"><font color="#D9B300">地图选项:</font></label>
+        <label class="label"><font color="#FFFFFF">地图选项:</font></label>
         <input type="checkbox" id="followme" v-model="followMe">
-        <label for="followme"><font color="#D9B300">视角跟随</font></label>
+        <label for="followme"><font color="#FFFFFF">视角跟随</font></label>
         <br>
         <input type="checkbox" id="showbox" v-model="showBox">
-        <label for="showbox"><font color="#D9B300">显示盒子</font></label>
+        <label for="showbox"><font color="#FFFFFF">显示盒子</font></label>
         <br>
         <input type="checkbox" id="showairdrop" v-model="showAirDrop">
-        <label for="showairdrop"><font color="#D9B300">显示空投</font></label>
+        <label for="showairdrop"><font color="#FFFFFF">显示空投</font></label>
         <br>
         <input type="checkbox" id="showcar" v-model="showCar">
-        <label for="showcar"><font color="#D9B300">显示载具</font></label>
+        <label for="showcar"><font color="#FFFFFF">显示载具</font></label>
         <br>
         <br>
-        <label class="label" v-on:dblclick="showNoItems"><font color="#D9B300">物品选项:</font></label>
+        <label class="label" v-on:dblclick="showNoItems"><font color="#FFFFFF">物品选项:</font></label>
         <input type="checkbox" id="showitemtop" v-model="showItemTop">
-        <label for="showitemtop"><font color="#D9B300">高级物资</font></label>
+        <label for="showitemtop"><font color="#FFFFFF">高级物资</font></label>
         <br>
         <input type="checkbox" id="showitemduo" v-model="showItemDuoDuo">
-        <label for="showitemduo"><font color="#D9B300">多多益善</font></label>
+        <label for="showitemduo"><font color="#FFFFFF">多多益善</font></label>
         <br>
         <input type="checkbox" id="showitembasic" v-model="showItemBasic">
-        <label for="showitembasic"><font color="#D9B300">基本物资</font></label>
+        <label for="showitembasic"><font color="#FFFFFF">基本物资</font></label>
         <br>
         <input type="checkbox" id="showitemar" v-model="showItemAR">
-        <label for="showitemar"><font color="#D9B300">步枪相关</font></label>
+        <label for="showitemar"><font color="#FFFFFF">步枪相关</font></label>
 		<br>
         <input type="checkbox" id="showitemsr" v-model="showItemSR">
-        <label for="showitemsr"><font color="#D9B300">狙击相关</font></label>
+        <label for="showitemsr"><font color="#FFFFFF">狙击相关</font></label>
         <br>
         <input type="checkbox" id="showitemhealth" v-model="showItemHealth">
-        <label for="showitemhealth"><font color="#D9B300">药品</font></label>
+        <label for="showitemhealth"><font color="#FFFFFF">药品</font></label>
         <br>
         <input type="checkbox" id="showitemthrow" v-model="showItemThrow">
-        <label for="showitemthrow"><font color="#D9B300">投掷物</font></label>
+        <label for="showitemthrow"><font color="#FFFFFF">投掷物</font></label>
         <br>
         <input type="checkbox" id="showitemammo" v-model="showItemAmmo">
-        <label for="showitemammo"><font color="#D9B300">子弹</font></label>
+        <label for="showitemammo"><font color="#FFFFFF">子弹</font></label>
         <br>
         <input type="checkbox" id="showitemall" v-model="showItemAll">
-        <label for="showitemall"><font color="#D9B300">所有</font></label>
-        <hr>
+        <label for="showitemall"><font color="#FFFFFF">所有</font></label>
+        <br>
+		<br>
         <a class="button is-small" @click="setFPS(15)"><font>fps15</font></a>
         <a class="button is-small" @click="setFPS(30)"><font>fps30</font></a>
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
         <br> -->
         <br>
         <br>
-        <span><font color="#D9B300"> 1{{ gameStartTime }}</font></span>
+		<input type="radio" name="fps" onclick="setFPS(1)">
+        <label for="fps15"><font color="#FFFFFF">15</font></label>
+        <input type="radio" name="fps" @click="setFPS(1)">
+        <label for="fps30"><font color="#FFFFFF">30</font></label>
+		<br>
+		<br>
+        <span><font color="#FFFFFF"> {{ gameStartTime }}</font></span>
         <br>
-        <span><font color="#D9B300"> 2{{ lastPacketTime }}</font></span>
+        <span><font color="#FFFFFF"> {{ lastPacketTime }}</font></span>
         <br>
         <span>{{ coordinate }}</span>
       </section>
