@@ -10,13 +10,14 @@ html { overflow-y: hidden; }
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 225px; /* Set the width of the sidebar */
+  width: 155px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   /* background-color: #00695C; */
-  background-color:transparent
+  background-color:rgba(0,0,0,0.7);
+ /* opcity:0.50 */
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -25,4 +26,6 @@ html { overflow-y: hidden; }
   margin-left: 0px;
   height: 100%;
   background-color: lightgray;
+}
+background-color: lightgray;
 }
