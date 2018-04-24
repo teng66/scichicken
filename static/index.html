@@ -72,18 +72,18 @@
         <br>
         <input type="checkbox" id="showitemall" v-model="showItemAll">
         <label for="showitemall"><font color="#FFFFFF">所有</font></label>
-        <br>
-		<br>
-        <a class="button is-small" @click="setFPS(15)"><font>fps15</font></a>
-        <a class="button is-small" @click="setFPS(30)"><font>fps30</font></a>
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
         <br> -->
         <br>
         <br>
-		<input type="radio" name="fps" onclick="setFPS(1)">
-        <label for="fps15"><font color="#FFFFFF">15</font></label>
-        <input type="radio" name="fps" @click="setFPS(1)">
-        <label for="fps30"><font color="#FFFFFF">30</font></label>
+		<input type="radio" name="fps" checked="checked" onclick="setFPS(10)">
+        <label for="fps10" ><font color="#FFFFFF">fps10</font></label>
+        <br>
+		<input type="radio" name="fps" onclick="setFPS(20)">
+        <label for="fps20"><font color="#FFFFFF">fps20</font></label>
+        <br>
+        <input type="radio" name="fps" @click="setFPS(30)">
+        <label for="fps30"><font color="#FFFFFF">fps30</font></label>
 		<br>
 		<br>
         <span><font color="#FFFFFF"> {{ gameStartTime }}</font></span>
